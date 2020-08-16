@@ -2,7 +2,7 @@
 ARG PHP_VERSION=7.2.11-apache
 FROM alpine as downloader
 
-ARG CHEVERETO_VERSION=1.1.4
+ARG CHEVERETO_VERSION=1.1.4.1
 RUN apk add --no-cache curl && \
     curl -sS -o /tmp/chevereto.zip -L "https://github.com/BlipRanger/Chevereto-Free/archive/${CHEVERETO_VERSION}.zip" && \
     mkdir -p /extracted && \
