@@ -4,7 +4,7 @@ FROM alpine as downloader
 
 ARG CHEVERETO_VERSION=1.1.4
 RUN apk add --no-cache curl && \
-    curl -sS -o /tmp/chevereto.zip -L "https://github.com/Chevereto/Chevereto-Free/archive/${CHEVERETO_VERSION}.zip" && \
+    curl -sS -o /tmp/chevereto.zip -L "https://github.com/BlipRanger/Chevereto-Free/archive/${CHEVERETO_VERSION}.zip" && \
     mkdir -p /extracted && \
     cd /extracted && \
     unzip /tmp/chevereto.zip  && \
